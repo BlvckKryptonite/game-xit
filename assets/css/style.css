@@ -121,6 +121,11 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Paragraph spacing */
+.about-section p {
+  margin-bottom: 1.5rem;
+}
+
 .about-section ul {
   list-style: disc;
   padding-left: 1.5rem;
