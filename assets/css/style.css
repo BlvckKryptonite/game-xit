@@ -185,3 +185,64 @@ a:hover {
   width: 100%;
   font-size: 1rem;
 }
+
+
+/* ========================
+   Adding Additional  Homepage Sections
+   ======================== */
+
+/* General layout for new sections */
+.about-preview,
+.benefits,
+.call-to-action {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.benefits {
+  background-color: #ffffff;
+}
+
+/* Section Headings */
+.about-preview h2,
+.benefits h2,
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #1a7bff;
+}
+
+/* Paragraphs */
+.about-preview p,
+.call-to-action p {
+  font-size: 1.05rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* Benefits List */
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.benefits li {
+  font-size: 1.05rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  color: #444;
+}
+
+.benefits li:last-child {
+  border-bottom: none;
+}
+
+/* Call-to-Action Button */
+.call-to-action .btn-primary {
+  margin-top: 1.5rem;
+}
