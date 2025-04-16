@@ -29,37 +29,55 @@ a:hover {
   margin: 0 auto;
 }
 
-/* Header */
+/* General Header Styles */
 .site-header {
   background-color: #f4f4f4;
-  padding: 1rem 0;
   border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   color: #1a7bff;
+  margin: 0;
 }
 
+/* Hide the checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Burger icon */
+.nav-toggle-label {
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+/* Nav menu default (hidden on mobile) */
 .nav-links {
-  list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
-.nav-links a.active {
-  font-weight: bold;
+/* When menu is toggled open */
+.nav-toggle:checked + .nav-toggle-label + nav .nav-links {
+  display: flex;
 }
 
+/* Larger screen layout */
 @media (min-width: 768px) {
-  .nav-links {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    margin-top: 0;
+  .nav-toggle-label {
+    display: none;
   }
 
   .site-header .container {
@@ -67,40 +85,69 @@ a:hover {
     justify-content: space-between;
     align-items: center;
   }
+
+  nav {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
 }
+
+
 
 /* Hero Section */
 .hero {
-  padding: 3rem 0;
+  background-color: #f0f8ff; /* Optional: soft tone under image */
   text-align: center;
-  background-color: #eaf2ff;
+  padding: 2rem 1rem;
+}
+
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url("../images/mayan-sachan-jhRJQSJgrmY-unsplash.jpg") no-repeat center center/cover;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .hero h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 .btn-primary {
   background-color: #1a7bff;
   color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #005ecb;
+  background-color: #005cd6;
 }
+
 
 /* Footer */
 .site-footer {
@@ -122,7 +169,7 @@ a:hover {
 #social-networks i {
   font-size: 160%;
   padding: 5%;
-  color: #1a7bff;
+  color: #1a7bff
 }
 
 /* About Page Sections */
