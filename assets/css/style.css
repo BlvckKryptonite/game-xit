@@ -169,6 +169,12 @@ a:hover {
   margin: 4px 0 12px 0;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* Icons */
 #benefits i {
   color: #1A7BFF;
@@ -176,23 +182,80 @@ a:hover {
 }
 
 /* Responsive layout */
+.benefit-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* MOBILE-FIRST BASE STYLES */
+#benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.benefit-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Mobile: stack normally with image LAST */
+.benefit-column:first-of-type {
+  order: 1;
+}
+#benefits-image {
+  order: 3;
+}
+.benefit-column:last-of-type {
+  order: 2;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Desktop: 3-column layout */
 @media (min-width: 768px) {
   #benefits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr auto 1fr;
     gap: 40px;
+    align-items: center;
+    justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    align-items: start;
   }
 
-  #benefits > div {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  /* Reset order for natural grid placement */
+  .benefit-column:first-of-type {
+    order: 0;
+  }
+
+  #benefits-image {
+    order: 0;
+  }
+
+  .benefit-column:last-of-type {
+    order: 0;
   }
 }
 
+/* Circle image styling */
+#circle-cover-bg {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #1A7BFF 40%, transparent 40%);
+}
 
 /* Hero Section */
 
@@ -454,4 +517,62 @@ a:hover {
 /* Call-to-Action Button */
 .call-to-action .btn-primary {
   margin-top: 1.5rem;
+  color: #1a7bff;
+}
+
+/* Call to Action Section */
+.cta-section {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center the full-width section within page layout */
+  background-image: url('../images/mohammed-raihan-hJcbG-KHWiQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
+  z-index: 1;
+}
+
+.cta-container {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.cta-heading {
+  font-size: 2rem; /* adjust as needed */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.125rem; /* adjust as needed */
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1a7bff; /* Blue button */
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* Fully rounded button */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1477d0; /* Slightly darker blue on hover */
 }
