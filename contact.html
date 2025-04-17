@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <h1 class="logo">Game-zit</h1>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Get in Touch</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+   
+    <!-- Header: Site logo and navigation menu -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="assets/images/GAme-XIT.png" alt="Game-Xit logo" class="logo-img" />
+        </a>
+      </h1>
+
+      <!-- Hidden checkbox toggles the menu -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Navigation menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <!-- Contact Section -->
     <main class="contact-section">

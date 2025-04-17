@@ -107,9 +107,16 @@ a:hover {
   }
 }
 
+/* "What is Game-Xit" section image properties Full-width image between sections */
+.break-image {
+  width: 100vw; /* Viewport width */
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 2rem 0;
+}
+
 /* Reasons section */
-
-
 #benefits-self, #benefits-community {
   display: flex;
   flex-direction: column;
