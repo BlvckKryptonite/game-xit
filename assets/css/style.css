@@ -646,6 +646,7 @@ main {
 .about-section p {
   font-size: 1rem;
   line-height: 1.7;
+  text-align: center;
 }
 
 .about-section ul {
@@ -656,4 +657,28 @@ main {
 .about-section ul li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
+}
+
+/* Flex layout for about sections on desktop */
+.about-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Responsive layout: 3 columns on large screens */
+@media (min-width: 992px) {
+  .about-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-section {
+    flex: 1;
+    margin-bottom: 0; /* Remove vertical spacing on desktop */
+  }
+
+  .about-section:not(:last-child) {
+    margin-right: 1.5rem; /* spacing between columns */
+  }
 }
