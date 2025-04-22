@@ -610,25 +610,11 @@ main {
 }
 
 
-/* === About Page Enhancements === */
+/* === About Page Styling === */
 
-/* Adjust About section to use full width */
 .about {
   padding: 2rem 0;
-  width: 100%; /* Ensure full width */
-}
-
-/* Make sure the .about-section utilizes full width */
-.about-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-left: 5px solid #1a7bff;
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  width: 100%; /* Ensure full width */
+  width: 100%;
 }
 
 .about h2 {
@@ -637,12 +623,45 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.about p {
+.about .intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
   font-size: 1.2rem;
   text-align: center;
-  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.about-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for about sections */
+.about-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Section styling */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 5px solid #1a7bff;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 .about-section h3 {
   font-size: 1.4rem;
@@ -651,30 +670,30 @@ main {
   text-align: center;
 }
 
-.about-section p {
+.about-section p,
+.about-section li {
   font-size: 1rem;
   line-height: 1.7;
-  text-align: center;
+  text-align: left;
 }
 
-.about-section ul {
-  list-style: disc inside;
+/* List styling */
+.about-section ol {
   padding-left: 1rem;
+  list-style-position: inside;
 }
 
-.about-section ul li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+/* Images inside sections */
+.section-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Flex layout for about sections on desktop */
-.about-columns {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-/* Responsive layout: 3 columns on large screens */
+/* Desktop Layout (side-by-side sections) */
 @media (min-width: 992px) {
   .about-columns {
     flex-direction: row;
@@ -683,10 +702,16 @@ main {
 
   .about-section {
     flex: 1;
-    margin-bottom: 0; /* Remove vertical spacing on desktop */
+    margin-bottom: 0;
   }
 
   .about-section:not(:last-child) {
-    margin-right: 1.5rem; /* spacing between columns */
+    margin-right: 1.5rem;
+  }
+
+  .section-img {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
