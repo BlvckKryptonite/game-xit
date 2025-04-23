@@ -678,6 +678,7 @@ main {
   background-color: #1477d0; /* Slightly darker blue on hover */
 }
 
+
 /* === About Page Styling === */
 
 .about {
@@ -788,7 +789,9 @@ main {
   background-color: #0f63d6;
 }
 
-/* Getting Help Section */
+
+/*  ===  === Getting Help Section ===  === */
+
 .get-help-section {
   position: relative;
   width: 100vw; /* Full viewport width */
@@ -829,6 +832,10 @@ main {
 .get-help-text {
   font-size: 1.125rem; /* adjust as needed */
   margin-bottom: 1.5rem;
+}
+
+.site-footer {
+  margin-top: 0;
 }
 
 /* Responsive: Desktop layout */
