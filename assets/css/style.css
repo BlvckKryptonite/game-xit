@@ -834,9 +834,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.site-footer {
-  margin-top: 0;
-}
 
 /* Responsive: Desktop layout */
 @media (min-width: 992px) {
