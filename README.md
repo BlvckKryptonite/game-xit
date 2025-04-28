@@ -1,12 +1,12 @@
-GAME-XIT
+<h3>GAME-XIT</h3>
 
 Game-Xit (short for "Game Exit") is a three-page website designed to raise awareness about video game addiction and offer support to individuals of all ages struggling with this issue.
 
 Visitors to the site can find general information about gaming addiction on the Home page, with more detailed insights available in the About section. The website also provides help through a link to a gaming self-assessment tool and a Contact form where users can connect with a Game-Xit team member for personalized assistance.
 
-Live Site: Game-Xit on GitHub Pages
+Live Site: https://blvckkryptonite.github.io/game-xit/
 
-Repository: GitHub Repository
+Repository: https://github.com/BlvckKryptonite/game-xit
 
 Features
 Navigation
