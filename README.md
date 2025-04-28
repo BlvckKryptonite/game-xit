@@ -1,4 +1,4 @@
-<h3>GAME-XIT</h3>
+<h1>GAME-XIT</h1>
 
 Game-Xit (short for "Game Exit") is a three-page website designed to raise awareness about video game addiction and offer support to individuals of all ages struggling with this issue.
 
@@ -8,33 +8,43 @@ Live Site: https://blvckkryptonite.github.io/game-xit/
 
 Repository: https://github.com/BlvckKryptonite/game-xit
 
-Features
-Navigation
-A responsive navigation bar at the top of each page links to Home, About, and Contact sections.
 
+
+<h2>Features</h2>
+
+<h3>Navigation</h3>
+
+A responsive navigation bar at the top of each page links to Home, About, and Contact sections.
 On mobile devices, the navigation menu collapses into a hamburger menu for improved usability.
 
-Home Page
+
+<h3>Home Page</h3>
 Introduces users to Game-Xit’s mission.
 
 Provides a quick overview of video game addiction and a motivational call to action.
 
 Includes a full-width hero image and a call-to-action button.
 
-About Page
+
+<h3>About Page</h3>
+
 Offers detailed information on gaming addiction including:
 
-Common signs of gaming addiction.
+<ul>
+<li>Common signs of gaming addiction.</li>
 
-Underlying causes and contributing factors.
+<li>Underlying causes and contributing factors.</li>
 
-Contains a link to a self-assessment tool for users to evaluate their gaming habits.
+<li>Contains a link to a self-assessment tool for users to evaluate their gaming habits.</li>
 
-Integrates educational images and a YouTube video for greater engagement.
+<li>Integrates educational images and a YouTube video for greater engagement.</li>
 
-Features a "Getting Help" section in a highlighted container with a direct call-to-action.
+<li>Features a "Getting Help" section in a highlighted container with a direct call-to-action.</li>
+</ul>
 
-Contact Page
+
+<h3>Contact Page</h3>
+
 Features a user-friendly contact form that collects:
 
 Name
@@ -53,7 +63,9 @@ Encourages users to reach out for confidential support.
 
 Includes social media links to Facebook, X (formerly Twitter), YouTube, and Instagram.
 
-Technologies Used
+
+
+<h3>Technologies Used</h3>
 HTML5
 
 CSS3
@@ -64,8 +76,10 @@ Google Fonts for typography
 
 Responsive Design Techniques for mobile, tablet, and desktop views
 
-Testing
-Manual Testing
+
+<h3>Testing</h3>
+
+<h4>Manual Testing</h4>
 Verified that navigation links function correctly across pages.
 
 Tested the responsiveness on various screen sizes: desktop, tablet, and mobile devices.
@@ -76,14 +90,14 @@ Ensured that the embedded Google Map and YouTube video resize appropriately acro
 
 Checked that external links (social media and self-assessment tool) open in a new tab as intended.
 
-Validator Testing
+<h4>Validator Testing</h4>
 HTML: No errors returned from the W3C Markup Validation Service.
 
 CSS: No errors returned from the W3C CSS Validation Service.
 
 Accessibility: Lighthouse testing confirmed strong accessibility, with clear contrast ratios, appropriate font sizes, and readable layout.
 
-Bugs
+<h3>Bugs</h3>
 Solved Bugs
 Image Alignment: Corrected issues with image padding and margins on larger screens.
 
@@ -92,7 +106,7 @@ Navigation Toggle: Fixed minor alignment issues with the mobile hamburger menu.
 Unfixed Bugs
 No unfixed bugs at the time of submission.
 
-Deployment
+<h3>Deployment</h3>
 The site was deployed to GitHub Pages. To deploy this project:
 
 Navigate to the GitHub repository.
@@ -105,19 +119,19 @@ Click Save — the site will then be available at the published link.
 
 The live website can be accessed here.
 
-Credits
+<h3>Credits</h3>
 Content
 All written content was created specifically for this project based on research about gaming addiction.
 
-Media
-Images were sourced from royalty-free providers including Pixabay and Unsplash.
+<h3>Media</h3>
+Images were sourced from royalty-free providers including Pixabay, pexels and Unsplash.
 
 Icons were provided via Font Awesome.
 
 Video embedded from YouTube (relevant public content).
 
-Acknowledgements
+<h3>Acknowledgements</h3>
 Special thanks to the Code Institute's "Love Running" project and other educational resources for design inspiration and responsive design techniques.
 
-Final Note
+<h3>Final Note</h3>
 This project was developed for educational purposes and to demonstrate the developer’s skills in building responsive, multi-page websites using HTML and CSS.
