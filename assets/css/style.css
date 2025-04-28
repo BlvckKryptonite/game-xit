@@ -74,14 +74,16 @@ a:hover {
   margin-left: auto;
 }
 
-/* Nav menu default (hidden on mobile) */
+/* Nav menu default (hidden on mobile), remove bullet point visibility */
 .nav-links {
+  list-style: none;
   display: none;
   flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
   text-align: center;
 }
+
 
 /* When menu is toggled open */
 .nav-toggle:checked + .nav-toggle-label + nav .nav-links {
