@@ -14,6 +14,7 @@ Visitors to the site can find general information about gaming addiction on the 
 ### Navigation
 - A responsive navigation bar at the top of each page linking to Home, About, and Contact sections.
 - On mobile devices, the navigation menu collapses into a hamburger icon for improved usability.
+- ![Desktop Mockup](assets/images/mockup-desktop-mobile.png)
 
 ### Home Page
 - Introduces users to Game-Xit’s mission.
