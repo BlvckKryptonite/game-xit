@@ -14,12 +14,16 @@ Visitors to the site can find general information about gaming addiction on the 
 ### Navigation
 - A responsive navigation bar at the top of each page linking to Home, About, and Contact sections.
 - On mobile devices, the navigation menu collapses into a hamburger icon for improved usability.
-- ![Desktop Mockup](assets/images/mockup-desktop-mobile.png)
+- ######
+- ![Desktop & mobile Mockup](assets/images/mockup-desktop-mobile.png)
 
 ### Home Page
 - Introduces users to Game-Xit’s mission.
 - Provides a quick overview of video game addiction and a motivational call to action.
 - Includes a full-width hero image and a call-to-action button.
+- ######
+- 
+- ![Hero Image On Home Page](assets/images/home-readme.png)
 
 ### About Page
 - Offers detailed information on gaming addiction, including:
@@ -61,9 +65,11 @@ Visitors to the site can find general information about gaming addiction on the 
 - Checked that external links (social media and self-assessment tool) open in a new tab.
 
 ### Validator Testing
-- **HTML**: Passed the W3C Markup Validation Service without errors.
-- **CSS**: Passed the W3C CSS Validation Service without errors.
-- **Accessibility**: Lighthouse testing confirmed strong accessibility with clear contrast ratios, appropriate font sizes, and a readable layout.
+- **HTML**: Passed the W3C Markup Validation Service without errors. You can [view that here](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fblvckkryptonite.github.io%2Fgame-xit%2F)
+- **CSS**: Passed the W3C CSS Validation Service without errors. You can also [view it here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fblvckkryptonite.github.io%2Fgame-xit%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- **Accessibility**: Lighthouse testing confirmed strong accessibility at 100% with clear contrast ratios, appropriate font sizes, and a readable layout:
+- #####
+- ![Lighthouse Testing](assets/images/lighthouse-test.png)
 
 ---
 
