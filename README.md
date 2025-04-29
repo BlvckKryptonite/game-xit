@@ -114,8 +114,7 @@ The live website can be accessed here: [Game-Xit Live Site](https://blvckkrypton
 
 ## Acknowledgements
 
-- Special thanks to the Code Institute's "Love Running" project and other educational resources for design inspiration and responsive layout practices.
-
+- Special thanks to the Code Institute's "Love Running" project and other educational resources for design inspiration and responsive layout practices. Special thanks to [Psychology tools](https://psychology-tools.com/test/excessive-gaming-screening-tool) as well for the comprehensive self-assessment tool to evaluate gaming habits.
 ---
 
 ## Final Note
