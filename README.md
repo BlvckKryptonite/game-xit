@@ -43,6 +43,9 @@ Visitors to the site can find general information about gaming addiction on the 
 - Embeds a responsive Google Maps iframe showing the organization’s location.
 - Encourages users to reach out for confidential support.
 - Includes social media links to Facebook, X (formerly Twitter), YouTube, and Instagram.
+- Tested form to ensure it posts user details correctly:
+- ###
+- ![Form input results](assets/images/contact-form-test.png)
 
 ---
 
